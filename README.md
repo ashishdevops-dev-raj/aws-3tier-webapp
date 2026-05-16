@@ -457,24 +457,3 @@ To enable CI/CD: in GitHub repo → **Settings → Secrets and variables → Act
 
 ---
 
-## 16. Resume Description
-
-Use this on your CV / LinkedIn / portfolio:
-
-> **AWS 3-Tier Web Application** — *React • Node.js • MySQL • Docker • NGINX • Terraform • AWS*  
-> Designed and deployed a production-style 3-tier cloud application on AWS, fully provisioned with Infrastructure-as-Code (Terraform). Built a containerized Node.js/Express REST API and a React SPA, served behind an NGINX reverse proxy on EC2 Ubuntu instances, fronted by an Application Load Balancer. Persisted data in AWS RDS MySQL inside private subnets, with Security Group chains enforcing least-privilege network access between the presentation, application, and data tiers. Implemented Docker multi-stage builds, NGINX caching/compression, and a GitHub Actions CI/CD pipeline that publishes images to Docker Hub on every push to `main`.
-
-**Skills to list:** AWS (VPC, EC2, RDS, ALB, IAM, Security Groups), Terraform, Docker, NGINX, Node.js, Express, React, MySQL, Linux (Ubuntu), CI/CD, Git/GitHub Actions, Infrastructure-as-Code.
-
----
-
-### Final checklist before you call it done
-
-- [ ] `docker compose up` works locally
-- [ ] Pushed images to Docker Hub (or use GH Actions)
-- [ ] Updated `terraform/ec2.tf` with your image names
-- [ ] `terraform apply` succeeds
-- [ ] `mysql -h <rds_endpoint> ... < database/schema.sql` ran
-- [ ] `http://<alb_dns_name>` shows the UI and lists users
-- [ ] Repo pushed to GitHub (without `.env` or `terraform.tfvars`)
-- [ ] `terraform destroy` ran when finished demoing
